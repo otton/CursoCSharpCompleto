@@ -18,7 +18,7 @@ namespace For
                 soma += n1; // Variável que somará todas as variáveis digitadas.
             }
             Console.WriteLine("Soma = " + soma); // Resultado da soma das variáveis digitadas.
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
