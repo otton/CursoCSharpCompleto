@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace ExercicioFixacao
+namespace ExercicioFix_ClassAbstract
 {
     class Program
     {
@@ -11,7 +11,7 @@ namespace ExercicioFixacao
         {
             List<TaxPayer> list = new List<TaxPayer>();
 
-            Console.WriteLine("Enter the number of tax payers: ");
+            Console.Write("Enter the number of tax payers: ");
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)
@@ -23,7 +23,7 @@ namespace ExercicioFixacao
                 string name = Console.ReadLine();
                 Console.Write("Anual income: ");
                 double annual = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                if (ch == i || ch == 'I')
+                if (ch == 'i' || ch == 'I')
                 {
                     Console.Write("Health expenditures: ");
                     double health = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -31,24 +31,27 @@ namespace ExercicioFixacao
                 }
                 else
                 {
-                    Console.WriteLine("Number of employees: ");
+                    Console.Write("Number of employees: ");
                     int number = int.Parse(Console.ReadLine());
-                    list.Add(new Company(name,annual,number));
+                    list.Add(new Company(name, annual, number));
                 }
             }
             Console.WriteLine();
+
+            Console.WriteLine("TAXES PAID:");
             foreach (TaxPayer taxPayer in list)
             {
-                Console.WriteLine("TAXES PAID:");
-                Console.WriteLine("Name: $ "+ taxPayer.Tax().ToString("F2", CultureInfo.InvariantCulture));
+
+                Console.WriteLine(taxPayer.Name + ": $ " + taxPayer.Tax().ToString("F2", CultureInfo.InvariantCulture));
             }
+            Console.WriteLine();
 
             double sum = 0.0;
-            foreach(TaxPayer taxPayer in list)
+            foreach (TaxPayer taxPayer in list)
             {
                 sum += taxPayer.Tax();
-                Console.WriteLine("TOTAL TAXES: $ "+ sum);
             }
+            Console.WriteLine("TOTAL TAXES: $ " + sum.ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadKey();
         }

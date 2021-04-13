@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumsComposition", "EnumsCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herança_Polimorfismo", "Herança_Polimorfismo\Herança_Polimorfismo.csproj", "{FEB26EC6-4629-4F47-A746-261BCBC24196}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseAbstrata", "ClasseAbstrata\ClasseAbstrata.csproj", "{6E616B13-4BF1-41D0-B134-CB23E4F4E21D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{FEB26EC6-4629-4F47-A746-261BCBC24196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB26EC6-4629-4F47-A746-261BCBC24196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB26EC6-4629-4F47-A746-261BCBC24196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E616B13-4BF1-41D0-B134-CB23E4F4E21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E616B13-4BF1-41D0-B134-CB23E4F4E21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E616B13-4BF1-41D0-B134-CB23E4F4E21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E616B13-4BF1-41D0-B134-CB23E4F4E21D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
