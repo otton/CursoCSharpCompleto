@@ -65,6 +65,8 @@ namespace Arquivos_Directory_DirectoryInfo
                 var caminho = Dir.FullName.ToString();
                 Console.WriteLine("\nCaminho da pasta: \n" + caminho);
 
+                Console.WriteLine("Path.GetFullPath: " + Path.GetFullPath(path)); 
+
                 //Imprimindo conteúdo na tela do arquivo texto1.txt
                 string[] lines = File.ReadAllLines(path + @"\texto1.txt");
                 Console.WriteLine("\nImprimindo conteúdo na tela do arquivo texto1.txt:");
