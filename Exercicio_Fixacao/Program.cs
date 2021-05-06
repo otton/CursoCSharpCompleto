@@ -14,7 +14,7 @@ namespace Exercicio_Fixacao
             Console.Write("Enter full file path: ");
             string path = Console.ReadLine();
 
-            List<Employee> list = new List<Employee>();
+            List<Employee> employees = new List<Employee>();
 
             using (StreamReader streamReader = File.OpenText(path))
             {
@@ -24,14 +24,20 @@ namespace Exercicio_Fixacao
                     string name = dados[0];
                     string email = dados[1];
                     double salary = double.Parse(dados[2], CultureInfo.InvariantCulture);
-                    list.Add(new Employee(name, email, salary));
+                    employees.Add(new Employee(name, email, salary));
                 }
             }
 
             Console.Write("Enter salary: ");
             double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            var mails = list.Where(x => x.Salary > valor).OrderBy(x => x.Email).Select(x => x.Email);
+            var mails = //list.Where(x => x.Salary > valor).OrderBy(x => x.Email).Select(x => x.Email);
+                from x in employees
+                where x.Salary > valor
+                orderby x.Email
+                select x.Email;
+            
+            
             Console.WriteLine("Email of people whose salary is more than " + valor.ToString("F2", CultureInfo.InvariantCulture));
 
             foreach (string mail in mails)
@@ -39,7 +45,12 @@ namespace Exercicio_Fixacao
                 Console.WriteLine(mail);
             }
 
-            var somaSalario = list.Where(x => x.Name[0] == 'M').Sum(x => x.Salary);
+            var somaSalario = //employees.Where(x => x.Name[0] == 'M').Sum(x => x.Salary);
+                (from x in employees
+                where x.Name[0] == 'M'
+                select x).Sum(x => x.Salary);
+                
+            
             Console.WriteLine("Sum of salary of people whose name starts with 'M': "+ somaSalario.ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadKey();
