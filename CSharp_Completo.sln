@@ -49,25 +49,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arquivos_Directory_Director
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioFixacao_Arquivos", "ExercicioFixacao_Arquivos\ExercicioFixacao_Arquivos.csproj", "{1C13E5E5-A90D-45EC-90B9-A7552E554545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFix_Arquivos", "ExercicioFix_Arquivos\ExercicioFix_Arquivos.csproj", "{168D25FB-177C-4EA8-A6A4-B486E2F7F130}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioFix_Arquivos", "ExercicioFix_Arquivos\ExercicioFix_Arquivos.csproj", "{168D25FB-177C-4EA8-A6A4-B486E2F7F130}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conjuntos", "Conjuntos", "{F206B6E8-E530-4478-8026-6F414C8AE425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFix_Conjunto", "ExercicioFix_Conjunto\ExercicioFix_Conjunto.csproj", "{295DD79E-2F33-4B61-8440-6B79F3EC9F97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioFix_Conjunto", "ExercicioFix_Conjunto\ExercicioFix_Conjunto.csproj", "{295DD79E-2F33-4B61-8440-6B79F3EC9F97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio1", "Exercicio1\Exercicio1.csproj", "{755E8722-6BD2-43BD-9E5A-8C35745A0881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercicio1", "Exercicio1\Exercicio1.csproj", "{755E8722-6BD2-43BD-9E5A-8C35745A0881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates_Exemplo1", "Delegates_Exemplo1\Delegates_Exemplo1.csproj", "{40DE637F-F25F-4A3E-8BD3-A65919545DFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates_Exemplo1", "Delegates_Exemplo1\Delegates_Exemplo1.csproj", "{40DE637F-F25F-4A3E-8BD3-A65919545DFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate", "Predicate\Predicate.csproj", "{EA3C2BAE-B27E-4C04-AEB3-EF9EFF5B57AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Predicate", "Predicate\Predicate.csproj", "{EA3C2BAE-B27E-4C04-AEB3-EF9EFF5B57AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action", "Action\Action.csproj", "{2AA74AAB-D4F4-48D8-9453-6CB474501F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Action", "Action\Action.csproj", "{2AA74AAB-D4F4-48D8-9453-6CB474501F43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate_Func", "Delegate_Func\Delegate_Func.csproj", "{5BC1C3F2-4412-4042-B547-CED268C82EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate_Func", "Delegate_Func\Delegate_Func.csproj", "{5BC1C3F2-4412-4042-B547-CED268C82EEC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQ - Consulta Integrada a Linguagens", "LINQ - Consulta Integrada a Linguagens", "{DCFF9468-571A-43C3-9ABC-D1AF2FF228C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio_Fixacao", "Exercicio_Fixacao\Exercicio_Fixacao.csproj", "{901B3FC3-45FB-4738-983B-FBC4F9E326FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercicio_Fixacao", "Exercicio_Fixacao\Exercicio_Fixacao.csproj", "{901B3FC3-45FB-4738-983B-FBC4F9E326FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio_Interface", "Exercicio_Interface\Exercicio_Interface.csproj", "{6C680091-EBD3-485C-B06A-58DE4982CC39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,6 +193,10 @@ Global
 		{901B3FC3-45FB-4738-983B-FBC4F9E326FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{901B3FC3-45FB-4738-983B-FBC4F9E326FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{901B3FC3-45FB-4738-983B-FBC4F9E326FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C680091-EBD3-485C-B06A-58DE4982CC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C680091-EBD3-485C-B06A-58DE4982CC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C680091-EBD3-485C-B06A-58DE4982CC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C680091-EBD3-485C-B06A-58DE4982CC39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
